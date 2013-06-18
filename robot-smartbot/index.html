@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Robotics-Studio</title>
+  <title>Проект робот SmatrBot - Robotics-Studio</title>
   <meta name="author" content="Максим К.">
 
   
-  <meta name="description" content="Ранее я рассказал, какие цели преследуются при разработке автономного робота &#8220;SmartBot&#8221;. Для реализации задачи необходимо выбрать &hellip;">
+  <meta name="description" content="Цель проекта: разработка робота &#8220;SmartBot&#8221; для автономной навигации в замкнутом пространстве с возможностью составления карты &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cb9itoi1.github.io">
+  <link rel="canonical" href="http://cb9itoi1.github.io/robot-smartbot">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Robotics-Studio" type="application/atom+xml">
@@ -73,56 +73,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/specification/">Из чего будет состоять SmartBot?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-18T19:21:00+04:00" pubdate data-updated="true">Вторник, 18 Июня 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Ранее я рассказал, какие цели преследуются при разработке автономного робота &#8220;SmartBot&#8221;. Для реализации задачи необходимо выбрать основные компоненты робота.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/specification/">Далее &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/robot-smartbot/">Проект робот SmatrBot</a></h1>
+      <h1 class="entry-title">Проект робот SmatrBot</h1>
     
     
       <p class="meta">
@@ -145,26 +101,81 @@
   </header>
 
 
-  <div class="entry-content"><p><img class="right" src="/images/Robot.jpg" width="250" height="200" title="Robot SmartBot" >
+<div class="entry-content"><p><img class="right" src="/images/Robot.jpg" width="250" height="200" title="Robot SmartBot" >
 <strong>Цель проекта:</strong> <em>разработка робота &#8220;SmartBot&#8221; для автономной навигации в замкнутом пространстве с возможностью составления карты пройденного маршрута.</em></p>
 
+<!-- more -->
+
+
+<p>Необходимость в создании автономных роботов обусловлена тем, что при возникновении чрезвычайных ситуаций и в процессе их устранения, необходимо обладать картографической информацией помещений, в которых работает робот. Так как последствия аварии различны, (обрушения стен, завалы на пути следования и т.д.), то план помещения может не совпадать с действительностью.
+В такой ситуации управляемые роботы в большинстве своем бесполезны, так как оператор, управляя роботом, ориентируется на план помещения и, в редких случаях, на изображение с камеры, установленной на роботе.<br/>
+Автономный робот, передвигаясь по неизвестной ему территории, непрерывно производит измерения расстояния до объекта в направлении движения, контролируя при этом габаритные расстояния по периметру своего корпуса. <br/>
+В процессе движения, робот записывает маршрут своего движения, который, при необходимости, передается оператору по радио связи для анализа обстановки. <br/>
+Робот &#8220;SmartBot&#8221; оснащен по периметру своего корпуса ультразвуковыми датчиками, с помощью которых производится измерение расстояния до объектов, что позволяет роботу автономно передвигаться, при этом предотвращая столкновения с другими объектами на пути следования.</p>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  
-    <footer>
-      <a rel="full-article" href="/robot-smartbot/">Далее &rarr;</a>
-    </footer>
+
+<span class="byline author vcard">Опубликовал <span class="fn">Максим К.</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2013-06-17T20:00:00+04:00" pubdate data-updated="true">Понедельник, 17 Июня 2013</time>
+      
+
+<span class="categories">
   
-  <div class="pagination">
+    <a class='category' href='/categories/smartbot/'>SmartBot</a>
+  
+</span>
+
+
+    </p>
     
-    <a href="archives">Архив</a>
-    
-  </div>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://cb9itoi1.github.io/robot-smartbot/" data-via="cb9itoi" data-counturl="http://cb9itoi1.github.io/robot-smartbot/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/specification/" title="Next Post: Из чего будет состоять SmartBot?">Из чего будет состоять SmartBot? &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h2>Коментарии</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -220,8 +231,8 @@
 <section>
   <h2>Полезное</h2>
   
-
 </aside>
+
 
     </div>
   </div>
@@ -237,7 +248,10 @@
       var disqus_shortname = 'robotics-studio';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://cb9itoi1.github.io/robot-smartbot/';
+        var disqus_url = 'http://cb9itoi1.github.io/robot-smartbot/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

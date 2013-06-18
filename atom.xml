@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Robotics-Studio]]></title>
+  <link href="http://cb9itoi1.github.io/atom.xml" rel="self"/>
+  <link href="http://cb9itoi1.github.io/"/>
+  <updated>2013-06-18T21:52:28+04:00</updated>
+  <id>http://cb9itoi1.github.io/</id>
+  <author>
+    <name><![CDATA[Максим К.]]></name>
+    <email><![CDATA[job.max@me.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Из чего будет состоять SmartBot?]]></title>
+    <link href="http://cb9itoi1.github.io/specification/"/>
+    <updated>2013-06-18T19:21:00+04:00</updated>
+    <id>http://cb9itoi1.github.io/specification</id>
+    <content type="html"><![CDATA[<p>Ранее я рассказал, какие цели преследуются при разработке автономного робота &#8220;SmartBot&#8221;. Для реализации задачи необходимо выбрать основные компоненты робота.</p>
+
+<!-- more -->
+
+
+<p><strong>Основные компоненты робота</strong><br/>
+На данном этапе разработки будет составлен перечень основных компонентов, из которых будет состоять робот.</p>
+
+<p><strong>1. Платформа робота:</strong><br/>
+Существует множество готовых решений, для различного класса роботизированных устройств. Так как по периметру платформы устанавливается серия ультразвуковых датчиков, для удобства размещения и улучшения технических характеристик, платформа выбирается круглой формы рис. 1.</p>
+
+<p><img class="center" src="https://dl.dropboxusercontent.com/u/2130778/%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0.png" width="600" height="500" title="Platforma" ></p>
+
+<p><strong>2. Датчики:</strong><br/>
+Основным датчиком робота, будет серия ультразвуковых датчиков &#8220;Parallax Ping))&#8221; рис. 2(а). Для установки датчиков будет использоваться подставка <a href="http://www.parallax.com/Store/Robots/AllRobots/tabid/755/CategoryID/2/List/0/SortField/0/Level/a/ProductID/795/Default.aspx">&#8220;Acrylic Ping))) Stand with Hardware&#8221;</a> фирмы &#8220;Parallax&#8221; рис. 2(б).</p>
+
+<p><img class="center" src="https://dl.dropboxusercontent.com/u/2130778/%28%D0%B0%29%D0%94%D0%B0%D1%82%D1%87%D0%B8%D0%BA%20Parallax%20Ping%20%29%29%2C%20%28%D0%B1%29%20%D0%9F%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%BE%D0%B4%20%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA.png" width="500" height="500" title="Sensor, Stand" ></p>
+
+<p><strong>3. Микроконтроллер:</strong><br/>
+Для управления роботом будет использоваться плата Arduino Mega 2560 и BeagalBoard рис. 3 (а,б).</p>
+
+<p><img class="center" src="https://dl.dropboxusercontent.com/u/2130778/%D0%A0%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA%203%20-%20%28%D0%B0%29%D0%9F%D0%BB%D0%B0%D1%82%D0%B0%20Arduino%20Mega%202560%2C%20%28%D0%B1%29%20BeagalBoard..png" width="500" height="500" title="Arduino Mega 2560, BeagalBoard" ></p>
+
+<p><strong>4. Мотор и колеса:</strong><br/>
+Был выбран мотор-редуктор <a href="http://www.parallax.com/Store/Robots/AllRobots/tabid/755/CategoryID/2/List/0/SortField/0/catpageindex/4/Level/a/ProductID/507/Default.aspx">Motor Mount and Wheel Kit</a> фирмы Parrallax, в комплект входит два мотор-редуктора с колесами рис. 4(а).
+Так же помимо мотор-редукторов будет установлено два поворотных колеса <a href="http://www.parallax.com/Store/Robots/AllRobots/tabid/755/CategoryID/2/List/0/SortField/0/catpageindex/2/Level/a/ProductID/527/Default.aspx">Caster Wheel Kit</a> фирмы Parallax рис. 4(б).</p>
+
+<p><img class="center" src="https://dl.dropboxusercontent.com/u/2130778/%D0%A0%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA%204%20-%20%28%D0%B0%29%D0%9C%D0%BE%D1%82%D0%BE%D1%80-%D1%80%D0%B5%D0%B4%D1%83%D0%BA%D1%82%D0%BE%D1%80%2C%20%28%D0%B1%29%20%D0%9F%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BA%D0%BE%D0%BB%D0%B5%D1%81%D0%BE.png" width="500" height="500" title="Motor Mount,Caster Wheel Kit" ></p>
+
+<p><strong>5. Драйвер управления мотором</strong><br/>
+Для управления мотор-редуктором был выбран драйвер управления <a href="http://www.parallax.com/Store/Accessories/MotorServos/tabid/163/CategoryID/57/List/0/SortField/0/Level/a/ProductID/64/Default.aspx">HB-25 Motor Controller</a> фирмы Parallax рис. 5.<br/>
+<img class="center" src="https://dl.dropboxusercontent.com/u/2130778/%D0%A0%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA%205%20-%20%D0%94%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BC%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC.png" width="250" height="500" title="HB-25 Motor Controller" ></p>
+
+<p><strong>6. Элемент питания</strong><br/>
+Для автономного передвижения потребуется источник питания, способный обеспечить робота энергией, необходимой для выполнения работы. В качестве такого источника будет использоваться два аккумулятора фирмы <a href="http://www.hobbyking.com/hobbyking/store/uh_viewItem.asp?idProduct=8578">Zippy</a> рис. 6. <br/>
+<img class="center" src="https://dl.dropboxusercontent.com/u/2130778/%D0%A0%D0%B8%D1%81%D1%83%D0%BD%D0%BE%D0%BA%206%20-%20%D0%90%D0%BA%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D1%8F%20Zippy.png" width="350" height="500" title="Zippy" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Проект робот SmatrBot]]></title>
+    <link href="http://cb9itoi1.github.io/robot-smartbot/"/>
+    <updated>2013-06-17T20:00:00+04:00</updated>
+    <id>http://cb9itoi1.github.io/robot-smartbot</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://cb9itoi1.github.io/images/Robot.jpg" width="250" height="200" title="Robot SmartBot" >
+<strong>Цель проекта:</strong> <em>разработка робота &#8220;SmartBot&#8221; для автономной навигации в замкнутом пространстве с возможностью составления карты пройденного маршрута.</em></p>
+
+<!-- more -->
+
+
+<p>Необходимость в создании автономных роботов обусловлена тем, что при возникновении чрезвычайных ситуаций и в процессе их устранения, необходимо обладать картографической информацией помещений, в которых работает робот. Так как последствия аварии различны, (обрушения стен, завалы на пути следования и т.д.), то план помещения может не совпадать с действительностью.
+В такой ситуации управляемые роботы в большинстве своем бесполезны, так как оператор, управляя роботом, ориентируется на план помещения и, в редких случаях, на изображение с камеры, установленной на роботе.<br/>
+Автономный робот, передвигаясь по неизвестной ему территории, непрерывно производит измерения расстояния до объекта в направлении движения, контролируя при этом габаритные расстояния по периметру своего корпуса. <br/>
+В процессе движения, робот записывает маршрут своего движения, который, при необходимости, передается оператору по радио связи для анализа обстановки. <br/>
+Робот &#8220;SmartBot&#8221; оснащен по периметру своего корпуса ультразвуковыми датчиками, с помощью которых производится измерение расстояния до объектов, что позволяет роботу автономно передвигаться, при этом предотвращая столкновения с другими объектами на пути следования.</p>
+]]></content>
+  </entry>
+  
+</feed>

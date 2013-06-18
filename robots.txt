@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://cb9itoi1.github.io/sitemap.xml 
